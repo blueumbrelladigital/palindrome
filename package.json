@@ -1,5 +1,5 @@
 {
-  "name": "palindrome",
+  "name": "bud-palindrome",
   "version": "0.1.0",
   "description": "palindrome detector",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/blueumbrelladigital/palindrome/issues"
   },
-  "homepage": "https://github.com/blueumbrelladigital/palindrome#readme"
+  "homepage": "https://github.com/blueumbrelladigital/palindrome#readme",
+  "directories": {
+    "test": "test"
+  }
 }
