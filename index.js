@@ -1,3 +1,5 @@
+module.exports = Phrase;
+
 String.prototype.reverse = function () {
     return Array.from(this).reverse().join("");
 }
@@ -21,10 +23,12 @@ function Phrase(content) {
         return this.processedContent() === this.processedContent().reverse();
     }
     
+    // pass this.content to lower()
     this.processedContent = function processedContent() {
-        return this.lower(this.content);   
+        return this.lower(this.letters()); 
     }
     
+    // returns all lowercase
     this.lower = function lower(string) {
         return string.toLowerCase();
     }
@@ -33,6 +37,11 @@ function Phrase(content) {
     this.louder = function louder() {
         return this.content.toUpperCase();
     }
+    
+    // returns only letters
+    this.letters = function letters() {
+        return (this.content.match(/[a-zA-z]/g) || []).join("");
+    }
 }
 
 // defines TranslatedPhrase object
@@ -40,7 +49,7 @@ function TranslatedPhrase(content,translation) {
     this.content = content;
     this.translation = translation;
     
-    // returns translation
+    // pass this.translation to lower()
     this.processedContent = function processedContent() {
         return this.lower(this.translation);
     }    
