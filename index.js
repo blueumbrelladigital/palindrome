@@ -20,12 +20,20 @@ function Phrase(content) {
     
     // returns true if palindrome, false if not
     this.palindrome = function palindrome() {
-        return this.processedContent() === this.processedContent().reverse();
+        if (this.processedContent() === "") {
+            return false;
+        } else {
+            return this.processedContent() === this.processedContent().reverse();
+        }
     }
     
     // pass this.content to lower()
     this.processedContent = function processedContent() {
-        return this.lower(this.letters()); 
+        if (this.content === null) {
+            return "";
+        } else {
+            return this.lower(this.letters()); 
+        }
     }
     
     // returns all lowercase

@@ -19,8 +19,12 @@ describe("Phrase", function() {
             let punctuation = new Phrase("Madam, I'm Adam.");
             assert(punctuation.palindrome());
         });
-        it("should return false if null", function() {
+        it("should return false if empty", function() {
             let nullString = new Phrase("");
+            assert(!nullString.palindrome());
+        })
+        it("should return false if null", function() {
+            let nullString = new Phrase(null);
             assert(!nullString.palindrome());
         })
     })
