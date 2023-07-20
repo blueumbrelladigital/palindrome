@@ -20,10 +20,10 @@ function Phrase(content) {
     
     // returns true if palindrome, false if not
     this.palindrome = function palindrome() {
-        if (this.processedContent() === "") {
-            return false;
-        } else {
+        if (this.processedContent()) {
             return this.processedContent() === this.processedContent().reverse();
+        } else {
+            return false;
         }
     }
     
