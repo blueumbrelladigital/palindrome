@@ -1,26 +1,30 @@
 {
-  "name": "bud-palindrome",
+  "name": "palindrome-blue",
   "version": "0.2.2",
   "description": "palindrome detector",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
+  "keywords": [
+    "palindrome",
+    "javascript"
+  ],
+  "homepage": "https://github.com/blueumbrelladigital/palindrome#readme",
+  "bugs": {
+    "url": "https://github.com/blueumbrelladigital/palindrome/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blueumbrelladigital/palindrome.git"
   },
-  "keywords": [
-    "palindrome",
-    "javascript"
-  ],
-  "author": "Will Conry",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/blueumbrelladigital/palindrome/issues"
-  },
-  "homepage": "https://github.com/blueumbrelladigital/palindrome#readme",
+  "author": "Blue Umbrella Digital, LLC",
+  "type": "commonjs",
+  "main": "index.js",
   "directories": {
     "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^12.0.3"
   }
 }

@@ -1,7 +1,6 @@
-<p>// THIS IS A REPOSITORY FOR NPM PACKAGE bud-palindrome //</p>
-<p>
-~ PALINDROME DETECTOR<br>
-~ INSTALL USING npm i bud-palindrome<br>
-</p>
-returns true if palindrome<br>
-returns false if not<br>
+<p>repository for npm package: <i>palindrome-blue</i></p>
+<p>purpose: to detect all palindromes!</br>
+~ pass a string<br>
+~ returns true if palindrome<br>
+~ returns false if not a palindrome</p>
+<p>install using: <i>npm i palindrome-blue</i></p>
